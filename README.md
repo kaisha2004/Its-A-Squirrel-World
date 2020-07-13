@@ -1,12 +1,11 @@
 # Project Overview
 
-## Inside A Squirrel's World Trivia
+## It's A Squirrel's World 
 
 ## Project Description
 
-Have you ever stayed up at night wondering what the  Sciurus carolinensis (Eastern gray) squirrels are doing? Have you ever wondered why does it seem like the squirrels in Central Park have all the fun? With the help of 323 volunteer Squirrel Sighters who tracked over 3,000 squirrels sightings, we developed a mobile app that's designed to allow the user to unlock their inner squirrel (come on we all have one!) and play along while also learning about their favorite furry friends. 
-
-This app will give users the unique opportunity to learn all about the activities of squirrels in Central Park and have fun while doing it. Specifically, we will ask users to guess the total sightings of squirrel activities while giving random facts. Their appreciation for squirrels will grow each time the game is played. 
+Have you ever stayed up at night wondering what the  Sciurus Carolinensis (Eastern gray) squirrels in Central Park are doing? Have you ever wondered why does it seem like these squirrels seem to have all the fun? With the help of 323 volunteer Squirrel Sighters who tracked over 3,000 squirrels, we developed a mobile app full of trivia designed to unlock the user's inner squirrel (come on we all have one!) and play along. A fun way to learn about the daily activities and grow their appreciation of their favorite furry friends! 
+ 
 
 ## API and Data Sample
 
