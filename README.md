@@ -1,6 +1,6 @@
 # Project Overview
 
-## It's A Squirrel's World 
+## It's A Squirrel's World
 
 ## Project Description
 
