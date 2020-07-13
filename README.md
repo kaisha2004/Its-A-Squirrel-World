@@ -4,7 +4,7 @@
 
 ## Project Description
 
-Have you ever stayed up at night wondering what the  Sciurus Carolinensis (Eastern gray) squirrels in Central Park are doing? Have you ever wondered why does it seem like these squirrels have all the fun? With the help of 323 volunteer Squirrel Sighters who tracked over 3,000 squirrels, we developed a mobile app full of trivia designed to unlock the user's inner squirrel (come on we all have one!) and have while doing it. This app is a fun way to learn about the daily activities and grow your appreciation of our favorite furry friends! 
+Have you ever stayed up at night wondering what the  Sciurus Carolinensis (Eastern gray) squirrels in Central Park are doing? Have you ever wondered why does it seem like these squirrels have all the fun? With the help of 323 volunteer Squirrel Sighters who tracked over 3,000 squirrels, we developed a mobile app full of trivia designed to unlock the user's inner squirrel (come on we all have one!) and to have while doing it. This app is a fun way to learn about the squirrel's daily activities and grow your appreciation of our favorite furry friends! 
  
 
 ## API and Data Sample
