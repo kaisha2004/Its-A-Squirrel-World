@@ -1,12 +1,12 @@
 # Project Overview
 
-## Central Park Squirrel Trivia
+## Inside A Squirrel's World Trivia
 
 ## Project Description
 
-Have you ever wondered why does it seem like the squirrels in Central Park are having so much fun? This mobile app is to unlock your inner squirrel (Come on we all have one!) and allow you to play along with your favorite furry animals. 
+Have you ever stayed up at night wondering what the  Sciurus carolinensis (Eastern gray) squirrels are doing? Have you ever wondered why does it seem like the squirrels in Central Park have all the fun? With the help of 323 volunteer Squirrel Sighters who tracked over 3,000 squirrels sightings, we developed a mobile app that's designed to allow the user to unlock their inner squirrel (come on we all have one!) and play along while also learning about their favorite furry friends. 
 
-This app offers users the opportunity to learn about the activities of squirrels in Central Park and have fun while doing it. We will ask users to guess the total sightings of squirrel activities while giving random facts so they're appreciation for squirrels will grow each time the game is played. 
+This app will give users the unique opportunity to learn all about the activities of squirrels in Central Park and have fun while doing it. Specifically, we will ask users to guess the total sightings of squirrel activities while giving random facts. Their appreciation for squirrels will grow each time the game is played. 
 
 ## API and Data Sample
 
@@ -73,16 +73,21 @@ Wireframe Link: https://wireframe.cc/IaPhmU
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://imgur.com/1eGFcLq
 
 ## Timeframes
 
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Writing Code| H | 7hrs| | |
+| Working with API | H | 3hrs| | |
+| Clickable Model | H | 4hrs| | |
+| External Image Gathering | M | 1.5hrs| | |
+| Layout Design | H | 2.5hrs| | |
+| Adding Animation | L | 4hrs| | |
+| Adding Audio | L | 4hrs| | |
+| Total | H | 31hrs| | |
 
 ## Code Snippet
 
