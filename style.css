@@ -1,0 +1,75 @@
+/* 
+* ebony: #664147
+* teal: #2F9C95
+* mint: #40C9A2
+* leafy: #A3F7B5
+* lileafy: #E5F9E0
+* forest: #274029
+* liforest: #315c2b
+*/
+
+body {
+  background-color: #E5F9E0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  font-family: sans-serif;
+  color: #274029
+
+  
+  
+}
+nav{
+  background-color: #664147;
+  text-align: right;
+}
+a {
+  color:#ffff
+}
+main, 
+footer,
+section,
+header {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px
+}
+header {
+  background-color: #315c2b;
+  color: #ffff;
+  text-align: center;
+}
+h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+  letter-spacing: 0.2rem;
+  word-spacing: 1rem;
+  margin-bottom: 5px;
+}
+h2 {
+  margin-top: 3px;
+  font-family: 'Roboto', sans-serif;
+  word-spacing: 0.5rem;
+  font-size: 2.7rem;
+}
+#directions {
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.2rem;
+  line-height: 1rem;
+}
+span{
+
+}
+
+main {
+  background-image: url(Park.jpg);
+  background-size: cover;
+  background-position: center;
+  
+}
+
+footer{
+  background-color: #664147;
+  color:#ffff;
+}
