@@ -14,17 +14,15 @@ body {
   flex-direction: column;
   justify-content: stretch;
   font-family: sans-serif;
-  color: #274029
-
-  
-  
+  color: #274029; 
 }
 nav{
   background-color: #664147;
   text-align: right;
+  word-spacing: 0.4rem;
 }
 a {
-  color:#ffff
+  color:#ffff;
 }
 main, 
 footer,
@@ -42,21 +40,24 @@ header {
 }
 h1 {
   font-family: 'Luckiest Guy', cursive;
-  font-size: 60px;
+  font-size: 40px;
   letter-spacing: 0.2rem;
-  word-spacing: 1rem;
-  margin-bottom: 5px;
+  word-spacing: 0.5rem;
+  margin: 20px 0px 10px 0px;
+  line-height: 1.3rem;
+  padding-top: 20px ;
 }
 h2 {
-  margin-top: 3px;
+  margin: 15px 0px 10px 0px;
   font-family: 'Roboto', sans-serif;
-  word-spacing: 0.5rem;
-  font-size: 2.7rem;
+  word-spacing: 0.3rem;
+  font-size: 1.4rem;
 }
 #directions {
   font-family: 'Open Sans', sans-serif;
-  font-size:1.2rem;
-  line-height: 1rem;
+  font-size:0.8rem;
+  line-height: 0.5rem;
+  
 }
 span{
 
@@ -66,9 +67,50 @@ main {
   background-image: url(Park.jpg);
   background-size: cover;
   background-position: center;
-  
+  height: 400px;
+}
+img{
+  position: relative;
+  top: 190px;
+  left: 200px
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+}
+.answer{
+  background-color: #315c2b;
+  color: white;
+}
+.facts {
+  margin: 15px 10px 0px 10px;
+  font-family: sans-serif;
+  font-style: italic;
+  background-color: #2F9C95;
+  opacity: 0.8;
+  color: white;
+  letter-spacing: 0.03rem;
 }
 
+#random {
+ text-decoration: underline; 
+ font-size: 1.1rem;
+ margin: 10px 0px 0px 0px;
+ font-family:  sans-serif;
+
+}
+
+
+button {
+  width: 100px
+}
+.win_status{
+  margin: 0px 10px 0px 10px;
+}
 footer{
   background-color: #664147;
   color:#ffff;
