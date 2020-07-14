@@ -1,24 +1,51 @@
 async function storeData() {
   const url = `https://data.cityofnewyork.us/resource/vfnx-vebw.json`
   // Write the rest of the code here.
-  const response = await axios.get(url)
-  console.log(response.data)
-  const data = response.data
+  try {
+    const response = await axios.get(url)
+    // console.log(response.data[150])
+    // const data = response.data
  
-  // function eat(data) {
-  //   const arr = []
-  //   for (let 1 = 0; i < arr.length; i++) {
-  //     if (element) {
-  //       arr.push(i);
-  //     }
-  //   }
-  //   console.log(arr.length)
-  //   return arr.length
-  // }
+    function eat() {
+      const arr = []
+      const squirrels = response.data
+      squirrels.forEach(squirrel => {
+        const eating = squirrel.eating
+        // console.log(squirrel.eating)
+        if (eating) {
+          arr.push(squirrel);
+        }
+      })
+
   
+      const filtered = () => {
+        const filter = arr.filter((a, b) => arr.indexOf(a) === b)
+        return (filter.length)
+      }
+      filtered()
+      return filtered()
+    }
+    eat()
+  
+    return eat()
+  }
+  catch (error) {
+    console.log(`Error ${error}`)
+  }
 } 
 storeData()
+console.log(storeData())
   
-// // capture array
-// // filter out only "true"
-// // grab the array.length
+const answerA = document.querySelector('#answerA')
+answerA.addEventListener('click', (e) => { 
+  e.preventDefault();
+  
+})
+// user clicks button
+//value button equals store data
+//prompt you are correct
+//remove question 
+//if click other two buttons
+//do not equal store data
+//prompt you are wrong
+//remove question 
