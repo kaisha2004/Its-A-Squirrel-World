@@ -65,14 +65,20 @@ main {
   background-size: cover;
   background-position: center;
   height: 400px;
+}
+.squirrels {
   display: flex;
   flex-direction: row;
-  justify-content: ;
+  justify-content: space-evenly;
+  display: none;
 }
+
 
 img{
   position: relative;
-  top: 30px;
+  top: 230px;
+  left: 120px;
+  
 }
 section {
   display: flex;
@@ -151,8 +157,6 @@ footer{
   fle
   font-size: 0.72rem;
   line-height: 0.2rem;
-  padding: 1px 0px 10px 0px;
-
-  
+  padding: 1px 0px 10px 0px; 
 
 }

@@ -1,18 +1,4 @@
-// RANDOM SQUIRREL IMAGE POSITION
-const createSquirrel = () => {
 
-  const Img = document.querySelector('img');
-  const main = document.querySelector('main');
-
-  const moveSquirrel = (img) => {
-    img.style.left = `${(Math.random() * main.innerWidth)}px`;
-    img.style.top = `${(Math.random() * main.innerHeight)}px`;
-  }
-  moveSquirrel(Img)
-
-  setInterval(() => { moveSquirrel(Img) }, 1000)
-}
-createSquirrel()
 
 // FOR EATING
 
@@ -296,7 +282,7 @@ storeDataApproach()
 // FOR FORAGING 
 
 const squirrel4 = document.querySelector('#squirrel4');
-squirrel3.addEventListener('click', (e) => {
+squirrel4.addEventListener('click', (e) => {
   e.preventDefault();
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
@@ -304,49 +290,49 @@ squirrel3.addEventListener('click', (e) => {
   const btnB = document.querySelector('#answerB');
   const btnC = document.querySelector('#answerC');
   trivia.style.display = 'block';
-  question_change.innerText = 'How many squirrels do you think were observed approaching humans?'
-  btnA.innerHTML = '92';
-  btnB.innerHTML = '43';
-  btnC.innerHTML = '61';
+  question_change.innerText = 'How many squirrels do you think were observed foraging for food?'
+  btnA.innerHTML = '474';
+  btnB.innerHTML = '239';
+  btnC.innerHTML = '371';
 
 
-async function storeDataApproach() {
+async function storeDataForaging() {
   const url = `https://data.cityofnewyork.us/resource/vfnx-vebw.json`
   try {
     const response = await axios.get(url)
-    function approaching() {
-      const appSquirrels = []
+    function foraging() {
+      const forSquirrels = []
       const squirrels = response.data
       squirrels.forEach(squirrel => {
-        const app = squirrel.approaches
-        if (app) {
-          appSquirrels.push(squirrel);
+        const forage = squirrel.foraging
+        if (forage) {
+          forSquirrels.push(squirrel);
         }
       })
 
       const filtered = () => {
-        const filter = appSquirrels.filter((a, b) => appSquirrels.indexOf(a) === b)
+        const filter = forSquirrels.filter((a, b) => forSquirrels.indexOf(a) === b)
         return (filter.length)
       }
       filtered()
       return filtered()
 
     }
-    approaching()
+    foraging()
 
-    const answerC = document.querySelector('#answerC')
-    answerC.addEventListener('click', (e) => {
+    const answerA = document.querySelector('#answerA')
+    answerA.addEventListener('click', (e) => {
       e.preventDefault();
-      const approached = approaching();
+      const foraged = foraging();
       const win_status = document.querySelector('.win_status');
       const facts = document.querySelector('.facts')
       const status_change = document.querySelector('#status')
       const squirrel_facts = document.querySelector('#squirrel_facts');
-      if (approached === 61) {
+      if (foraged === 474) {
         win_status.style.display = 'block';
         status_change.innerText = 'You are correct!';
         facts.style.display = 'block';
-        squirrel_facts.innerText = 'Squirrels front teeth never stop growing and can grow up to 6 inches a year.'
+        squirrel_facts.innerText = 'Squirrels can find food buried underneath a foot of snow and may increase their body weight by 25% during winter.'
       }
 
     })
@@ -360,11 +346,11 @@ async function storeDataApproach() {
       win_status.style.display = 'block';
       status_change.innerText = 'You are incorrect :(';
       facts.style.display = 'block';
-      squirrel_facts.innerText = 'Squirrels front teeth never stop growing and can grow up to 6 inches a year.'
+      squirrel_facts.innerText = 'Squirrels can find food buried underneath a foot of snow and may increase their body weight by 25% during winter.'
     })
     
-    const answerA = document.querySelector('#answerA')
-    answerA.addEventListener('click', (e) => {
+    const answerC = document.querySelector('#answerC')
+    answerC.addEventListener('click', (e) => {
       const win_status = document.querySelector('.win_status');
       const facts = document.querySelector('.facts')
       const status_change = document.querySelector('#status')
@@ -372,7 +358,7 @@ async function storeDataApproach() {
       win_status.style.display = 'block';
       status_change.innerText = 'You are incorrect :(';
       facts.style.display = 'block';
-      squirrel_facts.innerText = 'Squirrels front teeth never stop growing and can grow up to 6 inches a year.'
+      squirrel_facts.innerText = 'Squirrels can find food buried underneath a foot of snow and may increase their body weight by 25% during winter.'
     })
 
   }
@@ -382,7 +368,15 @@ async function storeDataApproach() {
   
   
 }
-storeDataApproach()
+storeDataForaging()
 
+})
 
+// GAME RESET
+
+const resetBTN = document.querySelector('#reset');
+resetBTN.addEventListener('click', (e) => {
+  e.preventDefault();
+  const squirrels = document.querySelector('.squirrels'); 
+  squirrels.style.display = 'block';  
 })
