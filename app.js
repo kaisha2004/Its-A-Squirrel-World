@@ -5,6 +5,7 @@
 const squirrel1 = document.querySelector('#squirrel1');
 squirrel1.addEventListener('click', (e) => {
   e.preventDefault();
+  squirrel1.remove();
   const trivia = document.querySelector('.trivia');
   trivia.style.display = 'block';
   async function storeDataEats() {
@@ -50,20 +51,21 @@ squirrel1.addEventListener('click', (e) => {
         e.preventDefault();
       const win_status = document.querySelector('.win_status');
       const facts = document.querySelector('.facts')
-      const status_change = document.querySelector('#status')
+        const status_change = document.querySelector('#status')
       win_status.style.display = 'block';
       status_change.innerText = 'You are incorrect :(';
-      facts.style.display = 'block';
+        facts.style.display = 'block';
+      
     })
     const answerC = document.querySelector('#answerC')
       answerC.addEventListener('click', (e) => {
       e.preventDefault()
       const win_status = document.querySelector('.win_status');
       const facts = document.querySelector('.facts')
-      const status_change = document.querySelector('#status')
+        const status_change = document.querySelector('#status')
       win_status.style.display = 'block';
       status_change.innerText = 'You are incorrect :(';
-      facts.style.display = 'block';
+        facts.style.display = 'block';
     })
 
     }
@@ -78,16 +80,12 @@ squirrel1.addEventListener('click', (e) => {
 
 
 
-
-
-//still need the remove/reset function 
-
-
 // FOR KUK SOUND 
 
 const squirrel2 = document.querySelector('#squirrel2');
 squirrel2.addEventListener('click', (e) => {
   e.preventDefault();
+  squirrel2.remove();
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
   const btnA = document.querySelector('#answerA');
@@ -178,14 +176,13 @@ storeDataKuks()
 })
 
 
-// //still need the remove/reset function 
-
 
 // FOR APPROACHING HUMANS 
 
 const squirrel3 = document.querySelector('#squirrel3');
 squirrel3.addEventListener('click', (e) => {
   e.preventDefault();
+  squirrel3.remove();
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
   const btnA = document.querySelector('#answerA');
@@ -274,9 +271,7 @@ storeDataApproach()
 
 
 })
-
-
-// //still need the remove/reset function 
+ 
 
 
 // FOR FORAGING 
@@ -284,6 +279,7 @@ storeDataApproach()
 const squirrel4 = document.querySelector('#squirrel4');
 squirrel4.addEventListener('click', (e) => {
   e.preventDefault();
+  squirrel4.remove();
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
   const btnA = document.querySelector('#answerA');
@@ -377,6 +373,23 @@ storeDataForaging()
 const resetBTN = document.querySelector('#reset');
 resetBTN.addEventListener('click', (e) => {
   e.preventDefault();
-  const squirrels = document.querySelector('.squirrelDiv'); 
-  squirrels.style.display = 'block';  
+  const squirrels = document.querySelector('.squirrels');
+  squirrels.style.display = 'block';
 })
+
+// NEXT QUESTION RESET
+
+const nextBTN = document.querySelector('#next');
+nextBTN.addEventListener('click', (e) => {
+  e.preventDefault();
+  const trivia = document.querySelector('.trivia');
+  const status = document.querySelector('.win_status');
+  const facts = document.querySelector('.facts');
+  trivia.style.display = 'none';
+  status.style.display = 'none';
+  facts.style.display = 'none';
+})
+
+@media only screen and (max-device-width: 480px) {
+
+}

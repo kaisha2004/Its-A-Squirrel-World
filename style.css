@@ -68,15 +68,18 @@ main {
   background-size: cover;
   background-position: center;
   height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .squirrelDiv {
   position: relative;
-  top: 50px;
-  display: none; 
+  top: 230px;
+  left: 40px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+.squirrels{
+  display: none;
 }
 
 section {
@@ -145,6 +148,14 @@ button {
   background-color: black;
   color: white;
   margin: 50px 0px 10px 0px;
+  font-size: 13px;
+}
+
+#next{
+  background-color: #40C9A2 ;
+  margin: 0px 0px 0px 15px;
+  width: 110px;
+  font-size: 13px;
 }
 
 footer{
