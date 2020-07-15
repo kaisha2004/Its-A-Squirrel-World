@@ -377,6 +377,6 @@ storeDataForaging()
 const resetBTN = document.querySelector('#reset');
 resetBTN.addEventListener('click', (e) => {
   e.preventDefault();
-  const squirrels = document.querySelector('.squirrels'); 
+  const squirrels = document.querySelector('.squirrelDiv'); 
   squirrels.style.display = 'block';  
 })
