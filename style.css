@@ -56,7 +56,7 @@ h2 {
 #directions {
   font-family: 'Open Sans', sans-serif;
   font-size:0.9rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   
 }
 
@@ -65,11 +65,14 @@ main {
   background-size: cover;
   background-position: center;
   height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
 }
+
 img{
   position: relative;
-  top: 190px;
-  left: 200px
+  top: 30px;
 }
 section {
   display: flex;
@@ -78,6 +81,9 @@ section {
   align-items: center;
   text-align: center;
   margin: 15px 10px 0px 10px;
+}
+.trivia{
+  display: none;
 }
 span {
 text-decoration: underline;
@@ -95,6 +101,7 @@ text-decoration: underline;
   opacity: 0.8;
   color: white;
   letter-spacing: 0.03rem;
+  display: none;
   
 }
 
@@ -108,18 +115,14 @@ text-decoration: underline;
 button {
   width: 100px
 }
-#reset{
-  background-color: black;
-  color: white;
-  margin: 5px 0px 10px 0px;
 
-}
 .win_status{
   margin: 10px 10px 0px 10px;
   background-color: #cc5500;
   opacity: 0.7;
   /* line-height: 1rem; */
   height: 70px;
+  display: none;
 }
 #status {
   margin: 10px 0px 0px 0px;
@@ -132,6 +135,13 @@ button {
   color: white;
   font-size: 1.2rem;
 }
+
+#reset{
+  background-color: black;
+  color: white;
+  margin: 50px 0px 10px 0px;
+}
+
 footer{
   background-color: #664147;
   color: white;
