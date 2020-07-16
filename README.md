@@ -1,3 +1,6 @@
+![Alt Text](https://i.gifer.com/fxZd.gif)
+<img src="https://i.gifer.com/fxZd.gif" width="40" height="40" />
+
 # Project Overview
 
 ## It's A Squirrel's World (Let's Go Nuts!)
