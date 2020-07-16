@@ -78,7 +78,7 @@ main {
   height: 400px;
 }
 
-.squirrelDiv {
+.squirrels {
   position: relative;
   top: 230px;
   left: 40px;
@@ -86,7 +86,10 @@ main {
   display: flex;
   justify-content: space-around;
 }
-.squirrels{
+#squirrel1,
+#squirrel2,
+#squirrel3,
+#squirrel4 {
   display: none;
 }
 .squirrels:hover {
