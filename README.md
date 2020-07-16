@@ -114,4 +114,6 @@ resetBTN.addEventListener('click', () => {
 
 ## Change Log
  
-TBD
+- Using JS to filter. Having a huge data set of over 1,000 sightings, after some time, I noticed the data had duplicate data and was double counting. I was able to use JS to clean the data by leveraging the filter method to identify and remove unnecessary duplication. 
+
+- Adding the "Next Question" button. This button was not a part of my original design because I wanted the next question to automatically pop. After testing the user experience, I found this caused a negative experience in that the user was not given sufficient time to read the squirrel facts. I did not allow for users' differing reading times. After realizing this, I added the extra button so the user more autonomy over the flow of the app. 
