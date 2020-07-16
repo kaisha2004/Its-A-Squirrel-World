@@ -1,5 +1,5 @@
-![Alt Text](https://i.gifer.com/fxZd.gif)
-<img src="https://i.gifer.com/fxZd.gif" width="40" height="40" />
+
+<img src="https://i.gifer.com/fxZd.gif" width="200" height="200" />
 
 # Project Overview
 
