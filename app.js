@@ -1,11 +1,20 @@
 
 
+// GAME RESET
+
+const resetBTN = document.querySelector('#reset');
+resetBTN.addEventListener('click', (e) => {
+  e.preventDefault();
+  const squirrels = document.querySelector('.squirrels');
+  squirrels.style.display = 'block';
+})
+
 // FOR EATING
 
 const squirrel1 = document.querySelector('#squirrel1');
 squirrel1.addEventListener('click', (e) => {
   e.preventDefault();
-  squirrel1.remove();
+  squirrel1.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   trivia.style.display = 'block';
   async function storeDataEats() {
@@ -85,7 +94,7 @@ squirrel1.addEventListener('click', (e) => {
 const squirrel2 = document.querySelector('#squirrel2');
 squirrel2.addEventListener('click', (e) => {
   e.preventDefault();
-  squirrel2.remove();
+  squirrel2.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
   const btnA = document.querySelector('#answerA');
@@ -182,7 +191,7 @@ storeDataKuks()
 const squirrel3 = document.querySelector('#squirrel3');
 squirrel3.addEventListener('click', (e) => {
   e.preventDefault();
-  squirrel3.remove();
+  squirrel3.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
   const btnA = document.querySelector('#answerA');
@@ -279,7 +288,7 @@ storeDataApproach()
 const squirrel4 = document.querySelector('#squirrel4');
 squirrel4.addEventListener('click', (e) => {
   e.preventDefault();
-  squirrel4.remove();
+  squirrel4.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
   const btnA = document.querySelector('#answerA');
@@ -368,14 +377,8 @@ storeDataForaging()
 
 })
 
-// GAME RESET
 
-const resetBTN = document.querySelector('#reset');
-resetBTN.addEventListener('click', (e) => {
-  e.preventDefault();
-  const squirrels = document.querySelector('.squirrels');
-  squirrels.style.display = 'block';
-})
+
 
 // NEXT QUESTION RESET
 
@@ -390,6 +393,3 @@ nextBTN.addEventListener('click', (e) => {
   facts.style.display = 'none';
 })
 
-@media only screen and (max-device-width: 480px) {
-
-}
