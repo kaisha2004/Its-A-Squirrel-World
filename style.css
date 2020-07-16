@@ -17,6 +17,8 @@ body {
   justify-content: stretch;
   font-family: sans-serif;
   color: #274029; 
+  margin: 0 auto;
+  
 }
 nav{
   background-color: #664147;
@@ -27,6 +29,7 @@ nav{
   position: fixed;
   top: 0px;
   width: 94vw;
+  z-index: 9999;
 }
 a {
   color:#ffff;
@@ -42,11 +45,46 @@ header {
   margin: 10px;
   padding: 2px;
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 10px 0px 0px 0px ;
+  text-align: center;
+  padding: 0px;
+}
+.mySlides {
+  display: none;
+  margin: 60px 0px 0px 0px;
+  position: relative
+
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 header {
   background-color: #315c2b;
   color: #ffff;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 h1 {
   font-family: 'Luckiest Guy', cursive;
@@ -215,7 +253,7 @@ footer{
 @media only screen and (max-device-width: 480px) {
 
   nav {
-    width: 88vw;
+    width: 92vw;
   }
  a {
     font-size: 12px;
@@ -224,12 +262,13 @@ footer{
     line-height: 2.5rem;
   }
   #directions {
-    margin: 5px 11px 5px 11px;
+    margin: 5px 0x 5px 0px;
+    padding: 1px 20px 1px 20px;
   }
  main{
     height: 275px;
  }
- .squirrelDiv {
+ .squirrels {
   position: relative;
   top: 130px;
   left: 17px;
@@ -237,4 +276,9 @@ footer{
   display: flex;
   justify-content: space-around;
 }
+footer {
+margin-right: 20px;
+padding-right: 20px;
+width: 91vw;
+
 }

@@ -16,6 +16,21 @@ resetBTN.addEventListener('click', () => {
 
 })
 
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
 // FOR EATING
 
 const squirrel1 = document.querySelector('#squirrel1');
@@ -55,7 +70,9 @@ squirrel1.addEventListener('click', (e) => {
         const win_status = document.querySelector('.win_status');
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
+        const answerA = document.querySelector('#answerA');
         if (ate === 255) {
+          answerA.style.borderColor = '#00ff00';
           win_status.style.display = 'block';
           status_change.innerText = 'You are correct!';
           facts.style.display = 'block';
