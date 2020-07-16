@@ -58,15 +58,15 @@ Wireframe Link: https://wireframe.cc/IaPhmU
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 13-17| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Skeleton Application Structure (HTML, CSS, JS etc) | Incomplete
-|July 13| External Images & Content Gathering | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 14| Finalize HTML  | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 15| Finalize CSS | Incomplete
-|July 16| Finalize JS | Incomplete
+|July 13-17| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|July 13| Project Approval | Complete
+|July 13| Skeleton Application Structure (HTML, CSS, JS etc) | Complete
+|July 13| External Images & Content Gathering | Complete
+|July 14| Pseudocode / actual code | Complete
+|July 14| Finalize HTML  | Complete
+|July 15| Initial Clickable Model  | Complete
+|July 15| Finalize CSS | Complete
+|July 16| Finalize JS | Complete
 |July 16| MVP/ Host Upload | Incomplete
 |July 17| Presentations | Incomplete
 
@@ -79,18 +79,35 @@ https://imgur.com/1eGFcLq
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Writing Code| H | 7hrs| | |
-| Working with API | H | 3hrs| | |
-| Clickable Model | H | 4hrs| | |
-| External Image Gathering | M | 1.5hrs| | |
-| Layout Design | H | 2.5hrs| | |
-| Adding Animation | L | 4hrs| | |
-| Adding Audio | L | 4hrs| | |
-| Total | H | 31hrs| | |
+| Writing Code| H | 7hrs| 8hrs | 8hrs |
+| Working with API | H | 3hrs| 6hrs | 6hrs |
+| Clickable Model | H | 4hrs| 8hrs | 8hrs |
+| External Image Gathering | M | 1.5hrs| 1.5hrs| 1.5hrs |
+| Layout Design | H | 2.5hrs| 4hrs | 4.5hrs |
+| Adding Animation | L | 4hrs| 2hrs | 2hrs |
+| Adding Audio | L | 4hrs| 1hr | 1hr |
+| Total | H | 31hrs| 31hrs | 31hrs |
 
 ## Code Snippet
+The game reset button was something that drove me insane. After hours of toiling with this, I learned depending on the button's use...you may not want to include the "e.preventDefault". In this case, I wanted the page to refresh everytime. Also, there will be times you will have to call elements directly as I could not manipulate the display at a parent level and had to code each element. 
 
-TBD
+```
+// GAME RESET
+
+const resetBTN = document.querySelector('#reset');
+resetBTN.addEventListener('click', () => {
+ 
+  const squirrel1 = document.querySelector('#squirrel1');
+  const squirrel2 = document.querySelector('#squirrel2');
+  const squirrel3 = document.querySelector('#squirrel3');
+  const squirrel4 = document.querySelector('#squirrel4');
+  squirrel1.style.display = 'block';
+  squirrel2.style.display = 'block';
+  squirrel3.style.display = 'block';
+  squirrel4.style.display = 'block';
+
+})
+```
 
 ## Change Log
  
