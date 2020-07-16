@@ -89,6 +89,24 @@ main {
 .squirrels{
   display: none;
 }
+.squirrels:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(5px, 5px) rotate(2deg); }
+  10% { transform: translate(-5px, -6px) rotate(-5deg); }
+  20% { transform: translate(-7px, 2px) rotate(5deg); }
+  30% { transform: translate(7px, 6px) rotate(4deg); }
+  40% { transform: translate(5px, -5px) rotate(4deg); }
+  50% { transform: translate(-5px, 6px) rotate(-5deg); }
+  60% { transform: translate(-7px, 5px) rotate(0deg); }
+  70% { transform: translate(7px, 5px) rotate(-5deg); }
+  80% { transform: translate(-5px, -5px) rotate(5deg); }
+  90% { transform: translate(5px, 6px) rotate(4deg); }
+  100% { transform: translate(5px, -6px) rotate(-5deg); }
+}
 
 section {
   display: flex;
