@@ -1,5 +1,5 @@
 
-<img src="https://i.gifer.com/fxZd.gif" width="200" height="200" />
+<img src="https://i.gifer.com/fxZd.gif" width="220" height="200" />
 
 # Project Overview
 
