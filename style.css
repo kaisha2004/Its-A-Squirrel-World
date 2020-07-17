@@ -286,7 +286,13 @@ footer {
 margin-right: 20px;
 padding-right: 20px;
 width: 91vw;
+display: flex;
+flex-flow: row wrap;
+line-height: 10px;
 }
 .trivia {
   margin: 0px 12px 0px 17px;
+}
+.buttons {
+  margin-bottom:  70px ;
 }
