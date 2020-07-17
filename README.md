@@ -70,7 +70,7 @@ Wireframe Link: https://wireframe.cc/IaPhmU
 |July 15| Initial Clickable Model  | Complete
 |July 15| Finalize CSS | Complete
 |July 16| Finalize JS | Complete
-|July 16| MVP/ Host Upload | Incomplete
+|July 16| MVP/ Host Upload | Complete
 |July 17| Presentations | Incomplete
 
 ## Priority Matrix
