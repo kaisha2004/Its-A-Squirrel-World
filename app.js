@@ -16,12 +16,21 @@ resetBTN.addEventListener('click', () => {
 
 })
 
-var slideIndex = 0;
+let slideIndex = 0;
 showSlides();
-
+function removeAnswerListeners() {
+  document.querySelectorAll('.answer').forEach(answer => {
+    // remove incorrect class from answer
+    // remove correct class 
+    answer.classList.remove('correct');
+    answer.classList.remove('incorrect');
+    const newAnswer = answer.cloneNode(true)
+    answer.parentNode.replaceChild(newAnswer, answer)
+  })
+}
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -36,6 +45,7 @@ function showSlides() {
 const squirrel1 = document.querySelector('#squirrel1');
 squirrel1.addEventListener('click', (e) => {
   e.preventDefault();
+  removeAnswerListeners();
   squirrel1.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   trivia.style.display = 'block';
@@ -72,7 +82,7 @@ squirrel1.addEventListener('click', (e) => {
         const status_change = document.querySelector('#status')
         const answerA = document.querySelector('#answerA');
         if (ate === 255) {
-          answerA.style.borderColor = '#00ff00';
+          answerA.classList.add('correct');
           win_status.style.display = 'block';
           status_change.innerText = 'You are correct!';
           facts.style.display = 'block';
@@ -85,6 +95,9 @@ squirrel1.addEventListener('click', (e) => {
         const win_status = document.querySelector('.win_status');
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
+        const answerA = document.querySelector('#answerA')
+        answerB.classList.add('incorrect');
+        answerA.classList.add('correct');
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
@@ -96,6 +109,9 @@ squirrel1.addEventListener('click', (e) => {
         const win_status = document.querySelector('.win_status');
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
+        const answerA = document.querySelector('#answerA')
+        answerC.classList.add('incorrect');
+        answerA.classList.add('correct');
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
@@ -118,6 +134,7 @@ squirrel1.addEventListener('click', (e) => {
 const squirrel2 = document.querySelector('#squirrel2');
 squirrel2.addEventListener('click', (e) => {
   e.preventDefault();
+  removeAnswerListeners();
   squirrel2.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
@@ -164,6 +181,7 @@ squirrel2.addEventListener('click', (e) => {
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
         if (kukked === 33) {
+          answerC.classList.add('correct');
           win_status.style.display = 'block';
           status_change.innerText = 'You are correct!';
           facts.style.display = 'block';
@@ -178,6 +196,9 @@ squirrel2.addEventListener('click', (e) => {
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
+        const answerC = document.querySelector('#answerC')
+        answerB.classList.add('incorrect');
+        answerC.classList.add('correct')
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
@@ -190,6 +211,9 @@ squirrel2.addEventListener('click', (e) => {
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
+        const answerC = document.querySelector('#answerC')
+        answerA.classList.add('incorrect');
+        answerC.classList.add('correct');
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
@@ -204,8 +228,6 @@ squirrel2.addEventListener('click', (e) => {
 
   }
   storeDataKuks()
-
-
 })
 
 
@@ -215,6 +237,7 @@ squirrel2.addEventListener('click', (e) => {
 const squirrel3 = document.querySelector('#squirrel3');
 squirrel3.addEventListener('click', (e) => {
   e.preventDefault();
+  removeAnswerListeners();
   squirrel3.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
@@ -261,6 +284,7 @@ squirrel3.addEventListener('click', (e) => {
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
         if (approached === 61) {
+          answerC.classList.add('correct');
           win_status.style.display = 'block';
           status_change.innerText = 'You are correct!';
           facts.style.display = 'block';
@@ -275,6 +299,9 @@ squirrel3.addEventListener('click', (e) => {
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
+        const answerC = document.querySelector('#answerC')
+        answerB.classList.add('incorrect');
+        answerC.classList.add('correct');
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
@@ -287,6 +314,9 @@ squirrel3.addEventListener('click', (e) => {
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
+        const answerC = document.querySelector('#answerC')
+        answerA.classList.add('incorrect');
+        answerC.classList.add('correct');
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
@@ -312,6 +342,7 @@ squirrel3.addEventListener('click', (e) => {
 const squirrel4 = document.querySelector('#squirrel4');
 squirrel4.addEventListener('click', (e) => {
   e.preventDefault();
+  removeAnswerListeners();
   squirrel4.style.display = 'none';
   const trivia = document.querySelector('.trivia');
   const question_change = document.querySelector('#question');
@@ -358,6 +389,7 @@ squirrel4.addEventListener('click', (e) => {
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
         if (foraged === 474) {
+          answerA.classList.add('correct');
           win_status.style.display = 'block';
           status_change.innerText = 'You are correct!';
           facts.style.display = 'block';
@@ -372,6 +404,9 @@ squirrel4.addEventListener('click', (e) => {
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
+        const answerA = document.querySelector('#answerA')
+        answerB.classList.add('incorrect');
+        answerA.classList.add('correct');
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
@@ -384,6 +419,9 @@ squirrel4.addEventListener('click', (e) => {
         const facts = document.querySelector('.facts')
         const status_change = document.querySelector('#status')
         const squirrel_facts = document.querySelector('#squirrel_facts');
+        const answerA = document.querySelector('#answerA')
+        answerC.classList.add('incorrect');
+        answerA.classList.add('correct');
         win_status.style.display = 'block';
         status_change.innerText = 'You are incorrect :(';
         facts.style.display = 'block';
